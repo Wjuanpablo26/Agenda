@@ -1,5 +1,7 @@
-package co.edu.uniquindio.poo;
+package co.edu.uniquindio.poo.application;
 import java.util.Scanner;
+
+import co.edu.uniquindio.poo.model.Agenda;
 
 /**
  * Hello world!
@@ -11,6 +13,8 @@ public class App {
         Scanner scannerInt = new Scanner(System.in);
         Scanner scannerDate = new Scanner(System.in);
         Scanner scannerTime = new Scanner(System.in);
+
+        
 
         System.out.println("Ingrese el nombre de la agenda");
         String nombre = scannerString.nextLine();
@@ -31,6 +35,11 @@ public class App {
                                 "8.Modificar Grupo\n"+ 
                                 "9.Modificar Reunion\n"+ 
                                 "10.Salir\n");
+
+            
+
+
+
             
         } while (opc!=0);
         scannerString.close();
@@ -40,4 +49,5 @@ public class App {
 
 
     }
+
 }

@@ -9,6 +9,10 @@ import java.util.Collection;
 import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
 
+import co.edu.uniquindio.poo.model.Agenda;
+import co.edu.uniquindio.poo.model.Contacto;
+import co.edu.uniquindio.poo.model.Reunion;
+
 
 
 public class ReunionTest {
@@ -22,8 +26,8 @@ public class ReunionTest {
     public void eliminarContacto() {
         LOG.info("Iniciando test eliminarContacto");
         Reunion reunion = new Reunion("poyecto 1", "24-05-1999", "9:08");
-        Contacto contacto1 = new Contacto("Camila Mejía", "Cami", "Calle 14 #5-20", "3005612665", "cami.m@uqvirtual.edu.co");
-        Contacto contacto2 = new Contacto("Juan Pérez", "Juan", "Calle 10 #10-30", "3123456789", "juan.p@uqvirtual.edu.co");
+        Contacto contacto1 = new Contacto("Camila Mejía", "Cami", "Calle 14 #5-20", "3005612665", "cami.m@uqvirtual.edu.co",30);
+        Contacto contacto2 = new Contacto("Juan Pérez", "Juan", "Calle 10 #10-30", "3123456789", "juan.p@uqvirtual.edu.co",22);
 
         Collection<Contacto> contactosReunion = new ArrayList<>();
         contactosReunion.add(contacto1);

@@ -2,6 +2,12 @@ package co.edu.uniquindio.poo;
 
 import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
+
+import co.edu.uniquindio.poo.model.Agenda;
+import co.edu.uniquindio.poo.model.Categoria;
+import co.edu.uniquindio.poo.model.Contacto;
+import co.edu.uniquindio.poo.model.Grupo;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -33,11 +39,11 @@ public class GrupoTest {
     public void crearGrupo() {
         LOG.info("Iniciando test agregarContactoAlGrupo");
         Grupo grupo = new Grupo("Familia", Categoria.FIESTA);
-        Contacto contacto = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com");
-        Contacto contacto2 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com");
-        Contacto contacto3 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com");
-        Contacto contacto4 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com");
-        Contacto contacto5 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com");
+        Contacto contacto = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com",20);
+        Contacto contacto2 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com",18);
+        Contacto contacto3 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com",25);
+        Contacto contacto4 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com",40);
+        Contacto contacto5 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com",30);
 
         // Agregar el contacto al grupo
         grupo.agregarContacto(contacto);
@@ -64,11 +70,11 @@ public class GrupoTest {
     public void eliminarContactoDelGrupo() {
         LOG.info("Iniciando test eliminarContactoDelGrupo");
         Grupo grupo = new Grupo("Amigos", Categoria.AMIGOS);
-        Contacto contacto1 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com");
-        Contacto contacto2 = new Contacto("Pedro", "Pedrito", "Calle 456", "0987654321", "pedrito@example.com");
-        Contacto contacto3 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com");
-        Contacto contacto4 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com");
-        Contacto contacto5 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com");
+        Contacto contacto1 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com",30);
+        Contacto contacto2 = new Contacto("Pedro", "Pedrito", "Calle 456", "0987654321", "pedrito@example.com",25);
+        Contacto contacto3 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com",35);
+        Contacto contacto4 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com",16);
+        Contacto contacto5 = new Contacto("Juan", "Juanito", "Calle 123", "1234567890", "juanito@example.com",33);
 
         // Agregar los contactos al grupo
         grupo.agregarContacto(contacto1);

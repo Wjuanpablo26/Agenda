@@ -1,4 +1,4 @@
-package co.edu.uniquindio.poo;
+package co.edu.uniquindio.poo.model;
 
 public class Grupo {
     public String nombre;
@@ -37,8 +37,8 @@ public class Grupo {
     /*
      * Metodo para crear contacto
      */
-    public void crearContacto(String nombre, String alias, String direccion, String telefono, String email){
-        Contacto contacto = new Contacto(nombre, alias, direccion, telefono, email);
+    public void crearContacto(String nombre, String alias, String direccion, String telefono, String email,byte edad){
+        Contacto contacto = new Contacto(nombre, alias, direccion, telefono, email,edad);
         validarMaximoContactos(contacto);
     }
 

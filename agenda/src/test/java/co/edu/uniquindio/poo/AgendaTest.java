@@ -1,6 +1,13 @@
 package co.edu.uniquindio.poo;
 import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
+
+import co.edu.uniquindio.poo.model.Agenda;
+import co.edu.uniquindio.poo.model.Categoria;
+import co.edu.uniquindio.poo.model.Contacto;
+import co.edu.uniquindio.poo.model.Grupo;
+import co.edu.uniquindio.poo.model.Reunion;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -19,8 +26,8 @@ public class AgendaTest {
     public void testBuscarContacto() {
         LOG.info("Iniciando test buscarContacto");
         Agenda agenda = new Agenda("Agenda Personal");
-        Contacto contacto1 = new Contacto("Camila Mejía", "Cami", "Calle 14 #5-20", "3005612665", "cami.m@uqvirtual.edu.co");
-        Contacto contacto2 = new Contacto("Juan Pérez", "Juan", "Calle 10 #10-30", "3123456789", "juan.p@correo.com");
+        Contacto contacto1 = new Contacto("Camila Mejía", "Cami", "Calle 14 #5-20", "3005612665", "cami.m@uqvirtual.edu.co", 20);
+        Contacto contacto2 = new Contacto("Juan Pérez", "Juan", "Calle 10 #10-30", "3123456789", "juan.p@correo.com",29);
         Collection<Contacto> contactos = new ArrayList<>();        
         contactos.add(contacto1);
         contactos.add(contacto2);
@@ -38,8 +45,8 @@ public class AgendaTest {
     public void eliminarContacto(){
         LOG.info("Iniciando test eliminarontacto");
         Agenda agenda = new Agenda("Agenda Personal");
-        Contacto contacto1 = new Contacto("Camila Mejía", "Cami", "Calle 14 #5-20", "3005612665", "cami.m@uqvirtual.edu.co");
-        Contacto contacto2 = new Contacto("Juan Pérez", "Juan", "Calle 10 #10-30", "3123456789", "juan.p@correo.com");
+        Contacto contacto1 = new Contacto("Camila Mejía", "Cami", "Calle 14 #5-20", "3005612665", "cami.m@uqvirtual.edu.co",20);
+        Contacto contacto2 = new Contacto("Juan Pérez", "Juan", "Calle 10 #10-30", "3123456789", "juan.p@correo.com",19);
         Collection<Contacto> contactos = new ArrayList<>();        
         contactos.add(contacto1);
         contactos.add(contacto2);
